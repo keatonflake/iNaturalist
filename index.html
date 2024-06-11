@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>INATURALIST</title>
+</head>
+
+<body>
+    <form id="searchForm">
+        <label>Select a location type:
+            <select name="location_type" required>
+                <option value="-10">Continent</option>
+                <option value="0">Country</option>
+                <option value="10">State</option>
+                <option value="20">County</option>
+                <option value="30">Town</option>
+                <option value="100">Park</option>
+            </select>
+        </label>
+
+        <label>
+            <input type="text" name="location_name" placeholder="Enter location name" required>
+        </label>
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="results"> </div>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
